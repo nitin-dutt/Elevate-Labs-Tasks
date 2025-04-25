@@ -1,4 +1,4 @@
-========================================================================= Task 1: Data Cleaning & Preprocessing – Titanic Dataset ===================================================================================
+======================================================================= Task 1: Data Cleaning & Preprocessing – Titanic Dataset =================================================================================
 
 This repository contains the preprocessing pipeline for the Titanic dataset, focused on cleaning, handling missing values, encoding categorical variables, scaling features, and removing outliers.
 
@@ -56,4 +56,57 @@ SECTION 9. Export Cleaned Data
 ## 📸 Screenshots
 ![image](https://github.com/user-attachments/assets/11161ad9-01c2-4f97-8ec4-b9666ccdf49a)
 
-=========================================================================                                                         ===================================================================================
+=========================================================================   Task 2 - Exploratory Data Analysis (EDA)  ===================================================================================
+
+This repository showcases EDA on the Titanic dataset to explore patterns, relationships, and insights using visualization and statistical techniques.
+
+## 🎯 Objective
+
+To perform exploratory data analysis and visualize data distributions, correlations, and categorical relationships.
+
+## 🧰 Tools & Libraries Used
+
+- Python
+- Pandas
+- Seaborn
+- Matplotlib
+  
+## 🛠️ Steps Performed
+
+### 1. Imported Data
+- Loaded the Titanic dataset from a public GitHub URL.
+
+### 2. Summary Statistics
+- Used `.describe()` and `.info()` to get initial insights into the dataset structure and missing values.
+
+### 3. Distribution Analysis
+- Plotted histograms and KDE plots for numerical features like `Age`.
+- Boxplots for detecting skewed distributions and outliers in `Fare`.
+
+### 4. Correlation Analysis
+- Created a heatmap of numeric feature correlations using `.corr()` and `seaborn.heatmap()`.
+
+### 5. Pairplot Analysis
+- Used `pairplot` to analyze interactions between `Age`, `Fare`, `Pclass`, and `Survived`.
+
+### 6. Categorical Insights
+- Count plots to explore the relationship between `Sex` and `Survived`.
+
+## 📸 Screenshots (Optional)
+
+![image](https://github.com/user-attachments/assets/ae482910-ae36-422a-91ee-97cda43223ae)
+
+![image](https://github.com/user-attachments/assets/54f750aa-b663-4640-90f5-c5e433d26ef7)
+
+![image](https://github.com/user-attachments/assets/eb004567-0f3f-43d0-ab56-a017b585ca35)
+
+![image](https://github.com/user-attachments/assets/4674462b-c8bf-442d-b54a-34d98f2faafb)
+
+![image](https://github.com/user-attachments/assets/9d62ff03-7963-43d3-b96c-d2572f3bc242)
+
+
+---
+
+## 🧾 Output
+
+No CSV is generated in this task — all insights are visualized and explored interactively.
