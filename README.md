@@ -1,4 +1,4 @@
-======================================================================= Task 1: Data Cleaning & Preprocessing – Titanic Dataset =================================================================================
+=========================================================================== Task 1: Data Cleaning & Preprocessing – Titanic Dataset =========================================================================
 
 This repository contains the preprocessing pipeline for the Titanic dataset, focused on cleaning, handling missing values, encoding categorical variables, scaling features, and removing outliers.
 
