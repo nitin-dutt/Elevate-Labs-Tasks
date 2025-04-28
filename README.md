@@ -56,7 +56,7 @@ SECTION 9. Export Cleaned Data
 ## 📸 Screenshots
 ![image](https://github.com/user-attachments/assets/11161ad9-01c2-4f97-8ec4-b9666ccdf49a)
 
-=========================================================================   Task 2 - Exploratory Data Analysis (EDA)  ===================================================================================
+=========================================================================   Task 2 - Exploratory Data Analysis (EDA)  ================================================================================
 
 This repository showcases EDA on the Titanic dataset to explore patterns, relationships, and insights using visualization and statistical techniques.
 
@@ -104,9 +104,69 @@ To perform exploratory data analysis and visualize data distributions, correlati
 
 ![image](https://github.com/user-attachments/assets/9d62ff03-7963-43d3-b96c-d2572f3bc242)
 
+=========================================================================== Task 3: Linear Regression =========================================================================
+
+# 📈 Task 3: Linear Regression – Titanic Dataset
+
+This repository implements both **Simple Linear Regression** and **Multiple Linear Regression** models on the Titanic dataset, evaluating model performance and visualizing results.
 
 ---
 
-## 🧾 Output
+## 🎯 Objective
 
-No CSV is generated in this task — all insights are visualized and explored interactively.
+- To implement and understand simple and multiple linear regression.
+- To evaluate model performance using MAE, MSE, and R².
+- To plot regression lines and interpret model coefficients.
+
+---
+
+## 🧰 Tools & Libraries Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+
+---
+## 🛠️ Steps Performed
+
+### 1. Imported Data
+- Loaded the cleaned Titanic dataset (`cleaned_titanic.csv`).
+
+### 2. Preprocessing
+- Checked for missing values and confirmed dataset readiness.
+
+### 3. Simple Linear Regression (SLR)
+- Selected `Age` as the single independent variable to predict `Fare`.
+- Split the data into training and testing sets.
+- Fitted a simple linear regression model.
+- Plotted the **Regression Line** (Actual vs Predicted Fare based on Age).
+
+### 4. Multiple Linear Regression (MLR)
+- Selected `Age`, `Pclass`, and `FamilySize` as independent variables.
+- Split the data into training and testing sets.
+- Fitted a multiple linear regression model.
+- Plotted **Actual vs Predicted Fares** (scatter plot).
+
+### 5. Model Evaluation
+- Calculated:
+  - **Mean Absolute Error (MAE)**
+  - **Mean Squared Error (MSE)**
+  - **R² Score** for both SLR and MLR.
+- Printed the model coefficients to interpret feature impacts.
+
+## 📊 Visualizations Included
+
+- **Scatter plot + Regression Line** for Simple Linear Regression.
+- **Scatter plot** of Actual vs Predicted values for Multiple Linear Regression.
+
+----
+## Screenshots
+
+-> Simple Linear Regression
+![image](https://github.com/user-attachments/assets/4569c4db-3659-4e51-a46a-4a00214faea2)
+
+-> Multiple Regression 
+![image](https://github.com/user-attachments/assets/2046e560-f1ad-486f-8354-30e014d89f80)
