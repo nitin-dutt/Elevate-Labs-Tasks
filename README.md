@@ -92,7 +92,7 @@ To perform exploratory data analysis and visualize data distributions, correlati
 ### 6. Categorical Insights
 - Count plots to explore the relationship between `Sex` and `Survived`.
 
-## 📸 Screenshots (Optional)
+## 📸 Screenshots 
 
 ![image](https://github.com/user-attachments/assets/ae482910-ae36-422a-91ee-97cda43223ae)
 
