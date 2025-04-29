@@ -170,3 +170,65 @@ This repository implements both **Simple Linear Regression** and **Multiple Line
 
 -> Multiple Regression 
 ![image](https://github.com/user-attachments/assets/2046e560-f1ad-486f-8354-30e014d89f80)
+
+
+=========================================================================== Task 4: Classification with Logistic Regression  =========================================================================
+
+# Task 4: Binary Classification with Logistic Regression
+
+This task is all about building a binary classifier using Logistic Regression. I used the Breast Cancer Wisconsin dataset to classify tumors as malignant or benign and evaluated the model using real-world metrics like ROC-AUC, precision, recall, and more.
+
+---
+
+## 🧠 Objective
+
+To train and evaluate a Logistic Regression model on a binary classification problem. Understand key evaluation metrics and how the sigmoid function shapes decision boundaries.
+
+---
+
+## 🛠️ Tools Used
+
+- Python
+- Pandas & NumPy
+- Scikit-learn
+- Matplotlib & Seaborn
+
+---
+## ⚙️ Steps Performed
+
+### 1. Loaded the Dataset
+- Used the Breast Cancer Wisconsin dataset from Kaggle.
+- Cleaned it by removing unnecessary columns and encoded the target (`diagnosis`: M = 1, B = 0).
+
+### 2. Preprocessed the Data
+- Split the data into train/test sets (80/20).
+- Standardized the features using `StandardScaler`.
+
+### 3. Built the Model
+- Trained a Logistic Regression model using `sklearn.linear_model`.
+- Predicted outcomes and generated probabilities for ROC-AUC analysis.
+
+### 4. Evaluated the Model
+- Created a **confusion matrix** to visualize performance.
+- Calculated **precision**, **recall**, and **classification report**.
+- Plotted the **ROC Curve** and calculated **AUC score**.
+
+### 5. Tuned the Threshold
+- Adjusted the decision threshold to 0.4 (default is 0.5).
+- Printed a new confusion matrix to show how predictions change.
+
+### 6. Sigmoid Function
+- Plotted the sigmoid curve to show how logistic regression maps linear output into probabilities between 0 and 1.
+----
+
+## Screenshots
+
+-> Confusion matrix
+![image](https://github.com/user-attachments/assets/d8332e75-a96b-46fb-a228-f62437aa0a1d)
+
+-> ROC Curve
+![image](https://github.com/user-attachments/assets/88468565-68ee-49d2-9376-539d6c954d3d)
+
+->Sigmoid function
+![image](https://github.com/user-attachments/assets/73f86e73-3932-48e6-b305-de1418f49899)
+
