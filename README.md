@@ -71,25 +71,25 @@ To perform exploratory data analysis and visualize data distributions, correlati
 - Seaborn
 - Matplotlib
   
-## 🛠️ Steps Performed
+## 🛠️ Steps Performed - The index number is the section of the code
 
-### 1. Imported Data
+1. Imported Data
 - Loaded the Titanic dataset from a public GitHub URL.
 
-### 2. Summary Statistics
+2. Summary Statistics
 - Used `.describe()` and `.info()` to get initial insights into the dataset structure and missing values.
 
-### 3. Distribution Analysis
+3. Distribution Analysis
 - Plotted histograms and KDE plots for numerical features like `Age`.
 - Boxplots for detecting skewed distributions and outliers in `Fare`.
 
-### 4. Correlation Analysis
+4. Correlation Analysis
 - Created a heatmap of numeric feature correlations using `.corr()` and `seaborn.heatmap()`.
 
-### 5. Pairplot Analysis
+5. Pairplot Analysis
 - Used `pairplot` to analyze interactions between `Age`, `Fare`, `Pclass`, and `Survived`.
 
-### 6. Categorical Insights
+6. Categorical Insights
 - Count plots to explore the relationship between `Sex` and `Survived`.
 
 ## 📸 Screenshots 
@@ -130,27 +130,27 @@ This repository implements both **Simple Linear Regression** and **Multiple Line
 - Seaborn
 
 ---
-## 🛠️ Steps Performed
+## 🛠️ Steps Performed - The index number is the section of the code 
 
-### 1. Imported Data
+1. Imported Data
 - Loaded the cleaned Titanic dataset (`cleaned_titanic.csv`).
 
-### 2. Preprocessing
+2. Preprocessing
 - Checked for missing values and confirmed dataset readiness.
 
-### 3. Simple Linear Regression (SLR)
+3. Simple Linear Regression (SLR)
 - Selected `Age` as the single independent variable to predict `Fare`.
 - Split the data into training and testing sets.
 - Fitted a simple linear regression model.
 - Plotted the **Regression Line** (Actual vs Predicted Fare based on Age).
 
-### 4. Multiple Linear Regression (MLR)
+4. Multiple Linear Regression (MLR)
 - Selected `Age`, `Pclass`, and `FamilySize` as independent variables.
 - Split the data into training and testing sets.
 - Fitted a multiple linear regression model.
 - Plotted **Actual vs Predicted Fares** (scatter plot).
 
-### 5. Model Evaluation
+5. Model Evaluation
 - Calculated:
   - **Mean Absolute Error (MAE)**
   - **Mean Squared Error (MSE)**
@@ -194,7 +194,7 @@ To train and evaluate a Logistic Regression model on a binary classification pro
 - Matplotlib & Seaborn
 
 ---
-## ⚙️ Steps Performed
+## ⚙️ Steps Performed - The index number is the section of the code
 
 ### 1. Loaded the Dataset
 - Used the Breast Cancer Wisconsin dataset from Kaggle.
@@ -232,3 +232,108 @@ To train and evaluate a Logistic Regression model on a binary classification pro
 ->Sigmoid function
 ![image](https://github.com/user-attachments/assets/73f86e73-3932-48e6-b305-de1418f49899)
 
+
+=========================================================================== Task 5: K-Means Clustering   =========================================================================
+
+
+🚢 Titanic Data Clustering - Task 5
+🎯 Objective
+The goal of this task is to perform unsupervised learning using KMeans clustering on the Titanic dataset to group passengers based on selected features. This helps understand inherent patterns in the data without using labels like survival status.
+
+🧰 Steps Performed - The index number is the section of the code
+
+1. 📦 Imported Required Libraries Used:
+- pandas, numpy for data manipulation
+- matplotlib, seaborn for visualization
+- sklearn.cluster.KMeans for clustering
+- StandardScaler for feature scaling
+- PCA for dimensionality reduction & better plotting
+
+2. 📥 Loaded the Dataset
+Data is loaded using read_csv() from the Titanic dataset.
+
+3. 🧹 Data Preprocessing
+- Filled missing values (Age, Embarked)
+- Dropped unneeded columns (Cabin, Ticket, Name, etc.)
+- Encoded categorical columns like Sex and Embarked
+- Scaled numerical features (Age, Fare, etc.) using StandardScaler
+
+4. 📊 Exploratory Analysis
+- Checked distributions with sns.histplot()
+- Used a heatmap to analyze correlations
+
+5. 🤖 Applied KMeans Clustering
+- Chose number of clusters (k) using Elbow Method
+- Fitted KMeans model and predicted cluster labels
+- Added the cluster results back into the DataFrame
+
+6. 📉 Dimensionality Reduction for Visualization
+- Applied PCA to reduce to 2 components
+- Plotted the clusters in 2D to visualize the group separation
+
+7. 📁 Exported Final Clustered Dataset
+Saved the cleaned and labeled data as clustered_titanic.csv.
+
+✅ Output
+You’ll see a scatter plot with color-coded clusters and a CSV file containing cluster assignments for each passenger.
+
+### Screensots
+![image](https://github.com/user-attachments/assets/e1374452-813c-467e-b454-764b239810ff)
+
+![image](https://github.com/user-attachments/assets/ee7aff3e-3bec-4e90-a081-67567e5413dd)
+
+![image](https://github.com/user-attachments/assets/d6999128-1fba-44d5-add4-9c8b93e99cbc)
+
+
+=========================================================================== Task 6: Classification using KNN   =========================================================================
+
+# 🎯 Task 6: Classification with K-Nearest Neighbors (KNN)
+
+In this task, I explored the K-Nearest Neighbors (KNN) algorithm on the famous Iris dataset. The goal was to classify flower species based on their features and evaluate model performance using multiple K values and visualizations.
+---
+
+## 🧠 Objective
+
+To implement KNN for multi-class classification and understand how changing the number of neighbors (`k`) affects accuracy and decision boundaries.
+---
+
+## 🛠️ Tools Used
+
+- Python
+- Pandas & NumPy
+- Scikit-learn
+- Matplotlib & Seaborn
+---
+## Dataset used - Iris
+---
+## ⚙️ What I Did
+
+### 1. Loaded the Dataset
+- Used the built-in **Iris** dataset from `sklearn.datasets`.
+- Converted it into a pandas DataFrame for better handling and readability.
+
+### 2. Preprocessed the Data
+- Split the dataset into **train** and **test** sets using `train_test_split` (80/20).
+- Standardized features using `StandardScaler` to improve distance-based classification.
+
+### 3. Built the Model
+- Used `KNeighborsClassifier` from `sklearn.neighbors`.
+- Trained the model for different values of `k` (e.g. 1 to 20).
+- Recorded and visualized accuracy scores for each `k`.
+
+### 4. Evaluated the Model
+- Calculated accuracy, confusion matrix, and classification report for the best `k`.
+- Used **pairplots** to visualize separation between different classes.
+- Plotted a graph showing how accuracy varies with different `k` values.
+
+### 5. Visualized Decision Boundaries
+- Plotted the **decision boundaries** using two selected features (for 2D visualization) to intuitively understand how KNN separates the classes.
+
+---
+### Screenshots
+
+![image](https://github.com/user-attachments/assets/e66dfa6e-00e7-42a2-a4da-6ed6c8b7e95b)
+
+![image](https://github.com/user-attachments/assets/0152f708-0c9e-4096-8fa9-e2c48cbb8c7f)
+
+![image](https://github.com/user-attachments/assets/8bc50d5b-8f06-49b1-b0a8-99e56b6582ce)
