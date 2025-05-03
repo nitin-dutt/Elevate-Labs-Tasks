@@ -235,55 +235,57 @@ To train and evaluate a Logistic Regression model on a binary classification pro
 
 =========================================================================== Task 5: K-Means Clustering   =========================================================================
 
+# Task 5: Heart Disease Prediction – Decision Tree & Random Forest Classifiers
 
-🚢 Titanic Data Clustering - Task 5
-🎯 Objective
-The goal of this task is to perform unsupervised learning using KMeans clustering on the Titanic dataset to group passengers based on selected features. This helps understand inherent patterns in the data without using labels like survival status.
+📌 **Objective**  
+The goal of this task is to build an ML model to predict heart disease using a variety of patient attributes.
 
-🧰 Steps Performed - The index number is the section of the code
+🧰 **Tools & Libraries Used**  
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- scikit-learn  
+---
 
-1. 📦 Imported Required Libraries Used:
-- pandas, numpy for data manipulation
-- matplotlib, seaborn for visualization
-- sklearn.cluster.KMeans for clustering
-- StandardScaler for feature scaling
-- PCA for dimensionality reduction & better plotting
+Dataset Used - heart.csv
+---
 
-2. 📥 Loaded the Dataset
-Data is loaded using read_csv() from the Titanic dataset.
+⚙️ **Workflow & Steps**
 
-3. 🧹 Data Preprocessing
-- Filled missing values (Age, Embarked)
-- Dropped unneeded columns (Cabin, Ticket, Name, etc.)
-- Encoded categorical columns like Sex and Embarked
-- Scaled numerical features (Age, Fare, etc.) using StandardScaler
+### **SECTION 1. Import Libraries**
+All necessary libraries for data processing, visualization, and machine learning were imported, including `pandas`, `numpy`, `matplotlib`, `seaborn`, and `sklearn`.
 
-4. 📊 Exploratory Analysis
-- Checked distributions with sns.histplot()
-- Used a heatmap to analyze correlations
+### **SECTION 2. Load & Preprocess Data**
+- The dataset is loaded from an online URL using `pandas.read_csv()`. 
+- The feature columns (`X`) and target column (`y`) are separated for model training.
+- The data is split into training and testing sets using `train_test_split`.
 
-5. 🤖 Applied KMeans Clustering
-- Chose number of clusters (k) using Elbow Method
-- Fitted KMeans model and predicted cluster labels
-- Added the cluster results back into the DataFrame
+### **SECTION 3. Decision Tree Classifier**
+- A Decision Tree model with a maximum depth of 4 is trained on the dataset.
+- The Decision Tree is visualized to understand the decision rules, with a plot displaying the splits and the target classes (`Disease` or `No Disease`).
+- The model's performance is evaluated using the classification report and confusion matrix.
 
-6. 📉 Dimensionality Reduction for Visualization
-- Applied PCA to reduce to 2 components
-- Plotted the clusters in 2D to visualize the group separation
+### **SECTION 4. Random Forest Classifier**
+- A Random Forest model with 100 estimators is trained on the same dataset.
+- The performance of the Random Forest model is evaluated using the classification report.
+- Feature importance is computed and visualized to show the most significant features for predicting heart disease.
 
-7. 📁 Exported Final Clustered Dataset
-Saved the cleaned and labeled data as clustered_titanic.csv.
+### **SECTION 5. Cross-Validation**
+- The Random Forest model is further evaluated using 5-fold cross-validation to check its performance on unseen data.
 
-✅ Output
-You’ll see a scatter plot with color-coded clusters and a CSV file containing cluster assignments for each passenger.
+🗃️ **Output**
+- **Classification Report and Confusion Matrix**: These metrics are provided for both the Decision Tree and Random Forest models, showing precision, recall, and F1-score.
+- **Feature Importance Plot**: A bar plot showing the top 10 features contributing the most to the Random Forest model's predictions.
 
-### Screensots
-![image](https://github.com/user-attachments/assets/e1374452-813c-467e-b454-764b239810ff)
+📸 **Screenshots**
 
-![image](https://github.com/user-attachments/assets/ee7aff3e-3bec-4e90-a081-67567e5413dd)
+![image](https://github.com/user-attachments/assets/60788b50-b883-4032-a8ad-2c642d8e81d3)
 
-![image](https://github.com/user-attachments/assets/d6999128-1fba-44d5-add4-9c8b93e99cbc)
+![image](https://github.com/user-attachments/assets/c21d2786-3b25-41d6-8026-b09b3f345dc1)
 
+![image](https://github.com/user-attachments/assets/158a5cda-b433-438a-b2e6-78228e7bdca2)
 
 =========================================================================== Task 6: Classification using KNN   =========================================================================
 
