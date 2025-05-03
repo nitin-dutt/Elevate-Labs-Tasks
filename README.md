@@ -1,3 +1,5 @@
+Hello! I am uploading all the tasks in a single repo and am giving the readme for all the tasks here as I thought it would be easier to navigate between the tasks this way. I provided the readme for each task clearly seperated here. While writing the code, I divided the code into sectitons and I gave a brief description of what each section of the code is doing.
+
 =========================================================================== Task 1: Data Cleaning & Preprocessing – Titanic Dataset =========================================================================
 
 This repository contains the preprocessing pipeline for the Titanic dataset, focused on cleaning, handling missing values, encoding categorical variables, scaling features, and removing outliers.
